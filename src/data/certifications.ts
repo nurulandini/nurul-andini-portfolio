@@ -55,6 +55,6 @@ export const certifications: Certification[] = [
 
     skills: ['Problem Solving', 'Innovation', 'Teamwork'],
 
-    type: 'award',
+    type: 'achievement',
   },
 ]

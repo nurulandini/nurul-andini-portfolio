@@ -17,5 +17,5 @@ export interface Certification {
 
   skills?: string[]
 
-  type: 'certification' | 'award'
+  type: 'certification' | 'achievement'
 }

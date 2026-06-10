@@ -34,8 +34,7 @@ export default function Projects() {
           </p>
 
           <h2 className="mt-6 text-5xl font-bold leading-[0.95] tracking-tighter text-white md:text-7xl xl:text-[88px]">
-            Projects I've
-            <span className="mt-2 block">worked on.</span>
+            Projects I've worked on.
           </h2>
         </motion.div>
 
@@ -63,25 +62,10 @@ export default function Projects() {
 
             {/* THUMBNAIL */}
             <div className="relative border-b border-white/10 p-6">
-              {/* BACKGROUND GLOW */}
-              <div className="absolute inset-0 bg-linear-to-br from-sky-500/5 via-transparent to-cyan-400/5" />
 
               {/* IMAGE WRAPPER */}
               <div
-                className="
-      relative
-      overflow-hidden
-      rounded-[36px]
-      border
-      border-white/10
-      bg-[#0f172a]
-      shadow-[0_30px_80px_rgba(2,6,23,0.45)]
-      transition-all
-      duration-700
-      group-hover:-translate-y-1
-      group-hover:shadow-[0_40px_120px_rgba(14,165,233,0.15)]
-    "
-              >
+                className=" relative overflow-hidden rounded-[36px] border border-white/10 bg-[#0f172a] shadow-[0_30px_80px_rgba(2,6,23,0.45)] transition-all duration-700 group-hover:-translate-y-1 group-hover:shadow-[0_40px_120px_rgba(14,165,233,0.15)] ">
                 {/* IMAGE */}
                 <img
                   src={featuredProject.image}

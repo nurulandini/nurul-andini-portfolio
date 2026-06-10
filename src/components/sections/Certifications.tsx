@@ -26,18 +26,12 @@ export default function Certifications() {
           }}
           className="max-w-4xl"
         >
-          <p className="text-sm font-medium uppercase tracking-[0.2em] text-sky-400">
-            Certifications & Awards
-          </p>
 
-          <h2 className="mt-6 text-5xl font-bold leading-[0.95] tracking-[-0.05em] md:text-7xl xl:text-[88px]">
-            <span className="bg-gradient-to-r from-sky-400 via-blue-400 to-cyan-300 bg-clip-text text-transparent">
-              Recognition through
+          <h2 className="-mt-7 text-5xl font-bold leading-[0.95] tracking-tighter md:text-7xl xl:text-[88px]">
+            <span className="bg-linear-to-r from-sky-400 via-blue-300 to-cyan-300 bg-clip-text text-transparent">
+              Certifications & Achievements
             </span>
 
-            <span className="mt-2 block text-white">
-              learning & achievements.
-            </span>
           </h2>
         </motion.div>
 
@@ -86,8 +80,8 @@ export default function Certifications() {
                     <div className="h-2 w-2 rounded-full bg-sky-400" />
 
                     <span className="text-sm font-medium text-sky-300">
-                      {certification.type === 'award'
-                        ? 'Award'
+                      {certification.type === 'achievement'
+                        ? 'Achievement'
                         : 'Certification'}
                     </span>
                   </div>

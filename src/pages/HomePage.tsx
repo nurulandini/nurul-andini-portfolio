@@ -6,7 +6,6 @@ import Certifications from '@/components/sections/Certifications'
 import Contact from '@/components/sections/Contact'
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
-import NotFoundPage from '@/pages/NotFoundPage'
 
 export default function HomePage() {
   const location = useLocation()
@@ -39,7 +38,6 @@ useEffect(() => {
 
       <Contact />
 
-      <NotFoundPage />
     </>
   )
 }
