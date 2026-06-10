@@ -6,7 +6,10 @@ import { RouterProvider } from 'react-router-dom'
 import '@/styles/index.css'
 
 import { router } from '@/routes'
+import { initializeAnalytics } from '@/lib/analytics'
 
+
+initializeAnalytics()
 ReactDOM.createRoot(
   document.getElementById('root')!
 ).render(

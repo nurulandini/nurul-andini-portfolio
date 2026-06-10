@@ -3,12 +3,13 @@ import { Outlet } from 'react-router-dom'
 import Navbar from '@/components/common/Navbar'
 import ScrollToTop from '@/components/common/ScrollToTop'
 import Footer from '@/components/common/Footer'
+import AnalyticsTracker from '@/components/AnalyticsTracker'
 
 export default function MainLayout() {
   return (
     <div className="relative min-h-screen overflow-hidden bg-[#020617] text-white">
       {/* GLOBAL BACKGROUND */}
-<div
+      <div
         className="absolute inset-0 opacity-[0.15]"
         style={{
           backgroundImage: 'radial-gradient(#94a3b8 1px, transparent 1px)',
@@ -27,10 +28,9 @@ export default function MainLayout() {
         }}
       />
 
-    
-
       {/* CONTENT */}
       <div className="relative z-10">
+        <AnalyticsTracker />
         <Navbar />
 
         <main>
