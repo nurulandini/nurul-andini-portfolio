@@ -68,7 +68,7 @@ export default function About() {
               {/* OUTER SHAPE */}
               <div className="relative w-95 h-130">
                 {/* GLASS SHAPE */}
-                <div className="absolute inset-0 rounded-[42%_58%_65%_35%/38%_45%_55%_62%] border border-white/20 bg-white/70 backdrop-blur-2xl shadow-[0_20px_80px_rgba(15,23,42,0.08)]" />
+                <div className="absolute inset-0 rounded-[42%_58%_65%_35%/38%_45%_55%_62%] border border-white/70 bg-white/70 backdrop-blur-2xl shadow-[0_20px_80px_rgba(15,23,42,0.08)]" />
 
                 {/* IMAGE MASK */}
                 <div className="absolute inset-0 overflow-hidden rounded-[42%_58%_65%_35%/38%_45%_55%_62%]">
@@ -90,7 +90,7 @@ export default function About() {
                   <div className="absolute inset-0" />
 
                   {/* NOISE / LIGHT */}
-                  <div className="absolute inset-0 bg-white/30" />
+                  <div className="absolute inset-0 bg-white/5" />
                 </div>
               </div>
             </div>
