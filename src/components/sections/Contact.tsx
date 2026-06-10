@@ -74,8 +74,8 @@ export default function Contact() {
             </p>
 
             {/* TITLE */}
-            <h2 className=" text-5xl font-bold leading-[0.95] tracking-[-0.05em] md:text-7xl">
-              <span className="bg-gradient-to-r from-sky-400 via-blue-400 to-cyan-300 bg-clip-text text-transparent">
+            <h2 className=" text-5xl font-bold leading-[0.95] tracking-tighter md:text-7xl">
+              <span className="bg-linear-to-r from-sky-400 via-blue-400 to-cyan-300 bg-clip-text text-transparent">
                 Let’s build
               </span>
 
@@ -95,10 +95,10 @@ export default function Contact() {
             <div className="mt-8 flex flex-wrap items-center justify-center gap-5">
               <a
                 href="mailto:nurulandini96@gmail.com"
-                className="group relative overflow-hidden rounded-full border border-sky-400/20 bg-gradient-to-r from-sky-500 to-cyan-400 px-7 py-4 text-sm font-medium text-white shadow-[0_20px_60px_rgba(14,165,233,0.35)] transition-all duration-500 hover:-translate-y-1"
+                className="group relative overflow-hidden rounded-full border border-sky-400/20 bg-linear-to-r from-sky-500 to-cyan-400 px-7 py-4 text-sm font-medium text-white shadow-[0_20px_60px_rgba(14,165,233,0.35)] transition-all duration-500 hover:-translate-y-1"
               >
                 {/* SHINE */}
-                <div className="absolute inset-0 translate-x-[-100%] bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-700 group-hover:translate-x-[100%]" />
+                <div className="absolute inset-0 translate-x-full bg-linear-to-r from-transparent via-white/20 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
 
                 <span className="relative z-10 flex items-center gap-2">
                   Let’s Talk
@@ -123,7 +123,7 @@ export default function Contact() {
                     className="group relative flex h-14 w-14 items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-sky-400/20 hover:bg-white/10"
                   >
                     {/* GLOW */}
-                    <div className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100 bg-gradient-to-br from-sky-500/10 to-cyan-400/10" />
+                    <div className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100 bg-linear-to-br from-sky-500/10 to-cyan-400/10" />
 
                     <Icon
                       size={20}

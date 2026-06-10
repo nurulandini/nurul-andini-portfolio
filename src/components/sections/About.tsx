@@ -28,12 +28,12 @@ export default function About() {
             About Me
           </p>
 
-          <h2 className="text-5xl md:text-7xl xl:text-[88px] font-bold leading-[0.95] tracking-[-0.05em]">
+          <h2 className="text-5xl md:text-7xl xl:text-[88px] font-bold leading-[0.95] tracking-thighter">
             <span className="bg-linear-to-r from-sky-500 via-blue-500 to-cyan-400 bg-clip-text text-transparent">
               Hi, I’m Nurul.
             </span>
           </h2>
-          <h2 className="text-2xl md:text-4xl xl:text-[40px] font-bold leading-[0.95] tracking-[-0.05em]">
+          <h2 className="text-2xl md:text-4xl xl:text-[40px] font-bold leading-[0.95] tracking-thighter">
             <span className="block mt-3 text-slate-500">
               I enjoy building modern digital products & experiences.
             </span>
@@ -66,7 +66,7 @@ export default function About() {
               <div className="absolute w-112.5 h-112.5 bg-linear-to-br from-sky-300/40 via-cyan-200/30 to-blue-200/20 rounded-full blur-3xl" />
 
               {/* OUTER SHAPE */}
-              <div className="relative w-[380px] h-[520px]">
+              <div className="relative w-95 h-130">
                 {/* GLASS SHAPE */}
                 <div className="absolute inset-0 rounded-[42%_58%_65%_35%/38%_45%_55%_62%] border border-white/20 bg-white/70 backdrop-blur-2xl shadow-[0_20px_80px_rgba(15,23,42,0.08)]" />
 
@@ -80,17 +80,17 @@ export default function About() {
                     onContextMenu={(e) => e.preventDefault()}
                     className="h-full w-full object-cover scale-[1] select-none grayscale brightness-[0.8] contrast-[1.1] opacity-100 "
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#020617]/70 via-[#020617]/10 to-transparent" />
+                  <div className="absolute inset-0 bg-linear-to-t from-[#020617]/70 via-[#020617]/10 to-transparent" />
                   <div className="absolute inset-0 bg-black/10" />
 
                   {/* DARK OVERLAY */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#020617]/40 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-linear-to-t from-[#020617]/40 via-transparent to-transparent" />
 
                   {/* SOFT BLUR */}
                   <div className="absolute inset-0" />
 
                   {/* NOISE / LIGHT */}
-                  <div className="absolute inset-0 bg-white/[0.03]" />
+                  <div className="absolute inset-0 bg-white/30" />
                 </div>
               </div>
             </div>
@@ -189,8 +189,6 @@ export default function About() {
                 ))}
               </div>
             </div>
-
-            
           </motion.div>
         </div>
       </div>

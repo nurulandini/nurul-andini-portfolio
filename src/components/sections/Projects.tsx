@@ -33,7 +33,7 @@ export default function Projects() {
             Selected Projects
           </p>
 
-          <h2 className="mt-6 text-5xl font-bold leading-[0.95] tracking-[-0.05em] text-white md:text-7xl xl:text-[88px]">
+          <h2 className="mt-6 text-5xl font-bold leading-[0.95] tracking-tighter text-white md:text-7xl xl:text-[88px]">
             Projects I've
             <span className="mt-2 block">worked on.</span>
           </h2>
@@ -59,12 +59,12 @@ export default function Projects() {
             className="relative mt-16 md:mt-24 xl:mt-28"
           >
             {/* GLOW */}
-            <div className="absolute inset-0 rounded-[60px] bg-gradient-to-r from-sky-500/10 via-blue-500/10 to-cyan-400/10 blur-3xl" />
+            <div className="absolute inset-0 rounded-[60px] bg-linear-to-r from-sky-500/10 via-blue-500/10 to-cyan-400/10 blur-3xl" />
 
             {/* THUMBNAIL */}
             <div className="relative border-b border-white/10 p-6">
               {/* BACKGROUND GLOW */}
-              <div className="absolute inset-0 bg-gradient-to-br from-sky-500/5 via-transparent to-cyan-400/5" />
+              <div className="absolute inset-0 bg-linear-to-br from-sky-500/5 via-transparent to-cyan-400/5" />
 
               {/* IMAGE WRAPPER */}
               <div
@@ -88,19 +88,10 @@ export default function Projects() {
                   alt={featuredProject.title}
                   loading="lazy"
                   draggable={false}
-                  className="
-        aspect-[16/10]
-        h-full
-        w-full
-        object-cover
-        transition-transform
-        duration-700
-        group-hover:scale-[1.04]
-      "
-                />
+                  className="aspect-16/10 h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"/>
 
                 {/* OVERLAY */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#020617]/80 via-[#020617]/10 to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-[#020617]/80 via-[#020617]/10 to-transparent" />
 
                 {/* CATEGORY */}
                 <div className="absolute left-5 bottom-5">
@@ -120,12 +111,12 @@ export default function Projects() {
                   Featured Project
                 </p>
 
-                <h3 className="mt-5 text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold leading-[0.92] tracking-[-0.05em] ">
+                <h3 className="mt-5 text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold leading-[0.92] tracking-tighther ">
                   <span className="text-white">
                     {featuredProject.title.split(' ')[0]}
                   </span>
 
-                  <span className="block bg-gradient-to-r from-sky-400 via-blue-400 to-cyan-300 bg-clip-text text-transparent">
+                  <span className="block bg-linear-to-r from-sky-400 via-blue-400 to-cyan-300 bg-clip-text text-transparent">
                     {featuredProject.title.split(' ')[1]}
                   </span>
                 </h3>
@@ -152,11 +143,11 @@ export default function Projects() {
                 <div className="mt-10 flex flex-wrap gap-4">
                   <Link
                     to={`/projects/${featuredProject.slug}`}
-                    className="group relative overflow-hidden rounded-2xl bg-gradient-to-r from-sky-500 to-cyan-400 px-6 py-4 font-medium text-white shadow-lg"
+                    className="group relative overflow-hidden rounded-2xl bg-linear-to-r from-sky-500 to-cyan-400 px-6 py-4 font-medium text-white shadow-lg"
                   >
                     <span className="relative z-10">View Case Study</span>
 
-                    <div className="absolute inset-0 translate-x-[-100%] bg-white/20 transition-transform duration-500 group-hover:translate-x-0" />
+                    <div className="absolute inset-0 translate-x-full bg-white/20 transition-transform duration-500 group-hover:translate-x-0" />
                   </Link>
 
                   {featuredProject.liveUrl && (
@@ -198,7 +189,7 @@ export default function Projects() {
               className="group relative"
             >
               {/* GLOW */}
-              <div className="absolute inset-0 rounded-[40px] bg-gradient-to-br from-sky-500/10 to-cyan-400/5 opacity-0 blur-2xl transition-opacity duration-500 group-hover:opacity-100" />
+              <div className="absolute inset-0 rounded-[40px] bg-linear-to-br from-sky-500/10 to-cyan-400/5 opacity-0 blur-2xl transition-opacity duration-500 group-hover:opacity-100" />
 
               {/* CARD */}
               <div className="relative flex h-full flex-col overflow-hidden rounded-[40px] border border-white/10 bg-[#07111f]/80 backdrop-blur-2xl shadow-[0_20px_80px_rgba(15,23,42,0.12)] transition-all duration-500 group-hover:-translate-y-2">
@@ -217,7 +208,7 @@ export default function Projects() {
                 {/* THUMBNAIL */}
                 <div className="relative overflow-hidden border-b border-white/10 p-5">
                   {/* GLOW */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-sky-500/5 via-transparent to-cyan-400/5" />
+                  <div className="absolute inset-0 bg-linear-to-br from-sky-500/5 via-transparent to-cyan-400/5" />
 
                   {/* IMAGE */}
                   <div
@@ -237,7 +228,7 @@ export default function Projects() {
                     />
 
                     {/* OVERLAY */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#020617]/70 via-transparent to-transparent" />
+                    <div className="absolute inset-0 bg-linear-to-t from-[#020617]/70 via-transparent to-transparent" />
 
                     {/* CATEGORY */}
                     <div className="absolute left-5 bottom-5">
